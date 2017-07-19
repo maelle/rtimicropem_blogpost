@@ -16,7 +16,7 @@ tags:
 - hardware
 ---
 
-As you might remember from [my blog post about `ropenaq`](Using an *R* package as platform for harmonized cleaning of data from RTI MicroPEM air quality sensors), I work as a data manager and statistician for an [epidemiology project called CHAI](http://www.chaiproject.org/) for Cardio-vascular health effects of air pollution in Telangana, India. One of our interests in CHAI is determining exposure, and sources of exposure, to PM2.5 which are very small particles in the air that have diverse adverse health effects. In this blog post, I'll present a package we wrote for dealing with the output of a scientific device, which might remind you of similar issues in your experimental work.
+As you might remember from [my blog post about `ropenaq`](https://ropensci.org/blog/blog/2017/02/21/ropenaq), I work as a data manager and statistician for an [epidemiology project called CHAI](http://www.chaiproject.org/) for Cardio-vascular health effects of air pollution in Telangana, India. One of our interests in CHAI is determining exposure, and sources of exposure, to PM2.5 which are very small particles in the air that have diverse adverse health effects. In this blog post, I'll present a package we wrote for dealing with the output of a scientific device, which might remind you of similar issues in your experimental work.
 
 ![](2017-07-19-rtimicropem/Allequipment_Frontview_cropped.jpg)
 

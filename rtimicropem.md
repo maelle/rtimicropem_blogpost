@@ -41,6 +41,25 @@ We chose R because everything else in our project, well data processing, documen
 
 # Features of `rtimicropem`: transform, explore and learn about data cleaning
 
+First things first, our package lives [here](https://github.com/ropensci/rtimicropem) and we plan a CRAN submission very soon. It has a [nice documentation website](http://ropensci.github.io/rtimicropem/) thanks to [`pkgdown`](https://github.com/hadley/pkgdown).
+
+## Transform and explore single files
+
+In `rtimicropem` after the use of the `convert_output` function, one gets an object of the R6 class `micropem` class. Its fields include the settings and measurements as two `data.frames`, and it has methods such as `summary` and `plot` of which you see the static output below.
+
+![](2017-07-19-rtimicropem/plotexample.png)
+
+The plot method can also outputs an interactive graph thanks to [`rbokeh`](http://hafen.github.io/rbokeh/).
+
+While these methods can be quite helpful to explore single files as an R user, they don't help non R users a lot. Because we wanted members of our team working on the field to be able to explore and check files with no R knowledge, we created a Shiny app that allows to upload individual files and then look at different tabs, including one with a plot, one with the summary of measurements, etc. This way, it was easy to spot a device failure for instance, and to plan a new measurement session with the corresponding participant.
+
+## Transform a bunch of files
+
+At the end of the CHAI data collection, we had more than 250 MicroPEM files. In order to prepare them for further processing we wrote the `batch_convert` function that saves the content of any number of MicroPEM files as two (real!) csv, one with the measurements, one with the settings. 
+
+## Learn about data cleaning
+
+As mentioned previously, we experienced issues with MicroPEM data quality. Although we had heard other teams complain of similar problems, in the literature there were very few details about data cleaning. We decided to gather information from other teams and the manufacturer and to document our own decisions, e.g. remove entire files based on some criteria, in a [vignette of the package](http://ropensci.github.io/rtimicropem/articles/chai_data_cleaning.html). This is our transparent answer to the question "What was your experience with MicroPEMs?" which we get often enough from other scientists interested in PM2.5 exposure.
 
 # Place of `rtimicropem` in the R package ecosystem
 

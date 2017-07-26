@@ -23,7 +23,7 @@ As you might remember from [my blog post about `ropenaq`](https://ropensci.org/b
 
 ![](2017-07-19-rtimicropem/Allequipment_Frontview_cropped.jpg)
 
-Part of the CHAI project is a panel study involving about 40 people wearing several devices, as you see above. The devices includes a GPS, an accelerometer, a wearable camera, and a PM2.5 monitor outputting time-resolved data (the grey box on the left). Basically, with this device, the RTI MicroPEM, we get one PM2.5 exposure value every 20 second. This is quite exciting, right? Except that we have two main issues with it...
+Part of the CHAI project is a panel study involving about 40 people wearing several devices, as you see above. The devices includes a GPS, an accelerometer, a wearable camera, and a PM2.5 monitor outputting time-resolved data (the grey box on the left). Basically, with this device, the RTI MicroPEM, we get one PM2.5 exposure value every 10 second. This is quite exciting, right? Except that we have two main issues with it...
 
 ![](2017-07-19-rtimicropem/screenshot_output2.png)
 
@@ -45,7 +45,7 @@ First things first, our package lives [here](https://github.com/ropensci/rtimicr
 
 ## Transform and explore single files
 
-In `rtimicropem` after the use of the `convert_output` function, one gets an object of the R6 class `micropem` class. Its fields include the settings and measurements as two `data.frames`, and it has methods such as `summary` and `plot` of which you see the static output below.
+In `rtimicropem` after the use of the `convert_output` function, one gets an object of the R6 class `micropem` class. Its fields include the settings and measurements as two `data.frames`, and it has methods such as `summary` and `plot` of which you see the static output below (no unit on this exploratory plot).
 
 ![](2017-07-19-rtimicropem/plotexample.png)
 

@@ -33,7 +33,7 @@ Then, since the RTI MicroPEMs are nice devices but also a work-in-progress, we h
 
 * Transform the output of the device into something more usable.
 
-* Allow the exploration of individual files after a day on the field.
+* Allow the exploration of individual files after a day in the field.
 
 * Document our data cleaning process.
 
@@ -51,7 +51,7 @@ In `rtimicropem` after the use of the `convert_output` function, one gets an obj
 
 The plot method can also outputs an interactive graph thanks to [`rbokeh`](http://hafen.github.io/rbokeh/).
 
-While these methods can be quite helpful to explore single files as an R user, they don't help non R users a lot. Because we wanted members of our team working on the field to be able to explore and check files with no R knowledge, we created a Shiny app that allows to upload individual files and then look at different tabs, including one with a plot, one with the summary of measurements, etc. This way, it was easy to spot a device failure for instance, and to plan a new measurement session with the corresponding participant.
+While these methods can be quite helpful to explore single files as an R user, they don't help non R users a lot. Because we wanted members of our team working in the field to be able to explore and check files with no R knowledge, we created a Shiny app that allows to upload individual files and then look at different tabs, including one with a plot, one with the summary of measurements, etc. This way, it was easy to spot a device failure for instance, and to plan a new measurement session with the corresponding participant.
 
 ## Transform a bunch of files
 
